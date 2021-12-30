@@ -1,0 +1,88 @@
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #333;
+    color: #fff;
+}
+a{
+    text-decoration: none !important;
+}
+#header{
+    background: url('../img/header2.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    position: relative;
+    z-index: 2;
+}
+#header::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url('../img/ovelay.jpeg') no-repeat center center/cover;
+    width: 100%;
+    min-height: 100vh;
+    opacity: 0.8;
+    z-index: -2;
+}
+.logo{
+    font-weight: 900;
+    font-size: 1.9em;
+    letter-spacing: 0.1em;
+}
+#header .navbar a{
+    font-weight: bold;
+} 
+#header .navbar a:hover{
+    border-bottom: 5px rgb(236, 33, 99) solid;
+}
+.header-content{
+    z-index: 2;
+    color: #fff;
+    height: 100%;
+}
+.header-content .container{
+    padding-top: 8rem;
+}
+.header-content .container h1{ 
+    padding-bottom: 2rem;
+}
+/* .header-content .container h1{
+    position: relative;    
+
+}
+.header-content .container h1::before{
+    content: '|';
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    animation: typing 4s steps(11) forwards,
+      caret 1s step-end infinite;
+} 
+@keyframes typing {
+    from { width: 50%;}
+	to { width: 70% }
+}
+@keyframes caret {
+	70% { color: transparent }
+} */
+.primary-btn{
+    background: rgb(236, 33, 99);
+    color: #fff;
+    padding: 10px 27px;
+    border-radius: 25px;
+    font-weight: 400;
+}
+.primary-btn:hover{
+    color: #fff;
+    opacity: 0.7;
+}
+@media screen and (max-width:786px) {
+    .display-2 {
+      font-size: 4.5rem;
+    }
+    .header-content h2{
+        font-size: 1.2rem;
+    }
+  }
